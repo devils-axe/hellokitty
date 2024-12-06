@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFC0CB; /* Baby pink background */
+        }
+        .text-large {
+            font-size: 2rem; /* Slightly smaller for mobile */
+            color: #C71585; /* Dark shade of pink */
+            margin: 10px 0; /* Space around the text */
+            text-align: center;
+        }
+        .gif-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for small screens */
+            gap: 10px; /* Adjust spacing for mobile */
+            width: 100%; /* Full width for mobile */
+            padding: 0 10px; /* Add some padding on mobile */
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%; /* Scale to fit grid column */
+            height: auto;
+            aspect-ratio: 1 / 1; /* Keeps GIFs square */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-large">Hope you're having a great day !!!</div>
+    <div class="gif-container">
+        <iframe src="https://giphy.com/embed/oXnN2TNSgfJQI" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://giphy.com/embed/92YG8KKSjYhMc" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://giphy.com/embed/bcrOR2stk6tKIxqPOZ" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://giphy.com/embed/Uva7h1wTIz9WKib0w1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="text-large">Genesis</div>
+</body>
+</html>
